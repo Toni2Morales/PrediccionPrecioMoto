@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/5a5bbac34b3c477d8624f4f5f77cf7c2/artifacts
+end_time: 1682525136574
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 5a5bbac34b3c477d8624f4f5f77cf7c2
+run_name: Elastic Net
+run_uuid: 5a5bbac34b3c477d8624f4f5f77cf7c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682525136345
+status: 3
+tags: []
+user_id: tonim

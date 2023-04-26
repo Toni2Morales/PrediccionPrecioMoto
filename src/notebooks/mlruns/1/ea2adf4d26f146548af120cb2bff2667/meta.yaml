@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/ea2adf4d26f146548af120cb2bff2667/artifacts
+end_time: 1682525132260
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: ea2adf4d26f146548af120cb2bff2667
+run_name: Decision Tree Regressor
+run_uuid: ea2adf4d26f146548af120cb2bff2667
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682525132169
+status: 3
+tags: []
+user_id: tonim

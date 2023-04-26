@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/2e994d342ce848afb53317b6e54ef4a5/artifacts
+end_time: 1682525138315
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 2e994d342ce848afb53317b6e54ef4a5
+run_name: Least Angle Regression
+run_uuid: 2e994d342ce848afb53317b6e54ef4a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682525138217
+status: 3
+tags: []
+user_id: tonim

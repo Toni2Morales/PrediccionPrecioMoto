@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/418565bc789b4668b65d0940572c4af1/artifacts
+end_time: 1682525131479
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 418565bc789b4668b65d0940572c4af1
+run_name: Random Forest Regressor
+run_uuid: 418565bc789b4668b65d0940572c4af1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682525131369
+status: 3
+tags: []
+user_id: tonim

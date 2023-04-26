@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/63b8e389f35742d397092aa354d8b4ed/artifacts
+end_time: 1682525135670
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 63b8e389f35742d397092aa354d8b4ed
+run_name: K Neighbors Regressor
+run_uuid: 63b8e389f35742d397092aa354d8b4ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682525135578
+status: 3
+tags: []
+user_id: tonim

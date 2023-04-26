@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/36b9af298f19400888ad1d24fffd1afb/artifacts
+end_time: 1682525136054
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 36b9af298f19400888ad1d24fffd1afb
+run_name: AdaBoost Regressor
+run_uuid: 36b9af298f19400888ad1d24fffd1afb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682525135965
+status: 3
+tags: []
+user_id: tonim

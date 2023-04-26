@@ -1,0 +1,2304 @@
+2023-04-26 17:46:56,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-26 17:46:56,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-26 17:46:56,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-26 17:46:56,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-26 17:46:59,013:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-04-26 17:47:32,860:INFO:PyCaret RegressionExperiment
+2023-04-26 17:47:32,860:INFO:Logging name: price
+2023-04-26 17:47:32,860:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-04-26 17:47:32,860:INFO:version 3.0.0
+2023-04-26 17:47:32,861:INFO:Initializing setup()
+2023-04-26 17:47:32,861:INFO:self.USI: dd7d
+2023-04-26 17:47:32,861:INFO:self._variable_keys: {'exp_id', 'n_jobs_param', 'seed', 'log_plots_param', 'X', 'X_test', 'X_train', '_ml_usecase', 'USI', 'exp_name_log', 'y_test', 'gpu_n_jobs_param', 'gpu_param', 'fold_groups_param', 'y', 'data', 'fold_shuffle_param', 'y_train', 'fold_generator', 'target_param', 'pipeline', 'html_param', 'transform_target_param', 'idx', 'memory', '_available_plots', 'logging_param'}
+2023-04-26 17:47:32,861:INFO:Checking environment
+2023-04-26 17:47:32,862:INFO:python_version: 3.7.4
+2023-04-26 17:47:32,862:INFO:python_build: ('tags/v3.7.4:e09359112e', 'Jul  8 2019 20:34:20')
+2023-04-26 17:47:32,862:INFO:machine: AMD64
+2023-04-26 17:47:32,862:INFO:platform: Windows-10-10.0.19041-SP0
+2023-04-26 17:47:32,865:INFO:Memory: svmem(total=16907886592, available=2077110272, percent=87.7, used=14830776320, free=2077110272)
+2023-04-26 17:47:32,865:INFO:Physical Core: 4
+2023-04-26 17:47:32,866:INFO:Logical Core: 8
+2023-04-26 17:47:32,866:INFO:Checking libraries
+2023-04-26 17:47:32,866:INFO:System:
+2023-04-26 17:47:32,866:INFO:    python: 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)]
+2023-04-26 17:47:32,866:INFO:executable: c:\Users\tonim\AppData\Local\Programs\Python\Python37\python.exe
+2023-04-26 17:47:32,866:INFO:   machine: Windows-10-10.0.19041-SP0
+2023-04-26 17:47:32,866:INFO:PyCaret required dependencies:
+2023-04-26 17:47:32,867:INFO:                 pip: 22.2.2
+2023-04-26 17:47:32,867:INFO:          setuptools: 65.3.0
+2023-04-26 17:47:32,867:INFO:             pycaret: 3.0.0
+2023-04-26 17:47:32,867:INFO:             IPython: 7.34.0
+2023-04-26 17:47:32,867:INFO:          ipywidgets: 7.7.1
+2023-04-26 17:47:32,867:INFO:                tqdm: 4.64.0
+2023-04-26 17:47:32,867:INFO:               numpy: 1.21.6
+2023-04-26 17:47:32,867:INFO:              pandas: 1.3.5
+2023-04-26 17:47:32,867:INFO:              jinja2: 3.1.2
+2023-04-26 17:47:32,867:INFO:               scipy: 1.5.4
+2023-04-26 17:47:32,867:INFO:              joblib: 1.2.0
+2023-04-26 17:47:32,867:INFO:             sklearn: 1.0.2
+2023-04-26 17:47:32,867:INFO:                pyod: 1.0.9
+2023-04-26 17:47:32,867:INFO:            imblearn: 0.9.0
+2023-04-26 17:47:32,867:INFO:   category_encoders: 2.6.0
+2023-04-26 17:47:32,867:INFO:            lightgbm: 3.3.5
+2023-04-26 17:47:32,867:INFO:               numba: 0.56.0
+2023-04-26 17:47:32,867:INFO:            requests: 2.28.1
+2023-04-26 17:47:32,867:INFO:          matplotlib: 3.5.2
+2023-04-26 17:47:32,867:INFO:          scikitplot: 0.3.7
+2023-04-26 17:47:32,867:INFO:         yellowbrick: 1.5
+2023-04-26 17:47:32,867:INFO:              plotly: 5.9.0
+2023-04-26 17:47:32,868:INFO:             kaleido: 0.2.1
+2023-04-26 17:47:32,868:INFO:         statsmodels: 0.13.2
+2023-04-26 17:47:32,868:INFO:              sktime: 0.17.1
+2023-04-26 17:47:32,868:INFO:               tbats: 1.1.3
+2023-04-26 17:47:32,868:INFO:            pmdarima: 2.0.1
+2023-04-26 17:47:32,868:INFO:              psutil: 5.9.1
+2023-04-26 17:47:32,868:INFO:PyCaret optional dependencies:
+2023-04-26 17:47:32,876:INFO:                shap: 0.41.0
+2023-04-26 17:47:32,876:INFO:           interpret: Not installed
+2023-04-26 17:47:32,876:INFO:                umap: Not installed
+2023-04-26 17:47:32,876:INFO:    pandas_profiling: 3.3.0
+2023-04-26 17:47:32,876:INFO:  explainerdashboard: Not installed
+2023-04-26 17:47:32,876:INFO:             autoviz: Not installed
+2023-04-26 17:47:32,876:INFO:           fairlearn: Not installed
+2023-04-26 17:47:32,876:INFO:             xgboost: 1.6.2
+2023-04-26 17:47:32,876:INFO:            catboost: Not installed
+2023-04-26 17:47:32,876:INFO:              kmodes: Not installed
+2023-04-26 17:47:32,876:INFO:             mlxtend: Not installed
+2023-04-26 17:47:32,877:INFO:       statsforecast: Not installed
+2023-04-26 17:47:32,877:INFO:        tune_sklearn: Not installed
+2023-04-26 17:47:32,877:INFO:                 ray: Not installed
+2023-04-26 17:47:32,877:INFO:            hyperopt: 0.2.7
+2023-04-26 17:47:32,877:INFO:              optuna: Not installed
+2023-04-26 17:47:32,877:INFO:               skopt: Not installed
+2023-04-26 17:47:32,877:INFO:              mlflow: 1.30.1
+2023-04-26 17:47:32,877:INFO:              gradio: Not installed
+2023-04-26 17:47:32,877:INFO:             fastapi: Not installed
+2023-04-26 17:47:32,877:INFO:             uvicorn: Not installed
+2023-04-26 17:47:32,877:INFO:              m2cgen: Not installed
+2023-04-26 17:47:32,877:INFO:           evidently: Not installed
+2023-04-26 17:47:32,877:INFO:               fugue: Not installed
+2023-04-26 17:47:32,877:INFO:           streamlit: 1.11.0
+2023-04-26 17:47:32,877:INFO:             prophet: Not installed
+2023-04-26 17:47:32,877:INFO:None
+2023-04-26 17:47:32,878:INFO:Set up data.
+2023-04-26 17:47:51,789:INFO:PyCaret RegressionExperiment
+2023-04-26 17:47:51,789:INFO:Logging name: price
+2023-04-26 17:47:51,789:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-04-26 17:47:51,789:INFO:version 3.0.0
+2023-04-26 17:47:51,790:INFO:Initializing setup()
+2023-04-26 17:47:51,790:INFO:self.USI: 41bc
+2023-04-26 17:47:51,790:INFO:self._variable_keys: {'exp_id', 'n_jobs_param', 'seed', 'log_plots_param', 'X', 'X_test', 'X_train', '_ml_usecase', 'USI', 'exp_name_log', 'y_test', 'gpu_n_jobs_param', 'gpu_param', 'fold_groups_param', 'y', 'data', 'fold_shuffle_param', 'y_train', 'fold_generator', 'target_param', 'pipeline', 'html_param', 'transform_target_param', 'idx', 'memory', '_available_plots', 'logging_param'}
+2023-04-26 17:47:51,790:INFO:Checking environment
+2023-04-26 17:47:51,790:INFO:python_version: 3.7.4
+2023-04-26 17:47:51,790:INFO:python_build: ('tags/v3.7.4:e09359112e', 'Jul  8 2019 20:34:20')
+2023-04-26 17:47:51,790:INFO:machine: AMD64
+2023-04-26 17:47:51,790:INFO:platform: Windows-10-10.0.19041-SP0
+2023-04-26 17:47:51,790:INFO:Memory: svmem(total=16907886592, available=2017890304, percent=88.1, used=14889996288, free=2017890304)
+2023-04-26 17:47:51,790:INFO:Physical Core: 4
+2023-04-26 17:47:51,790:INFO:Logical Core: 8
+2023-04-26 17:47:51,790:INFO:Checking libraries
+2023-04-26 17:47:51,790:INFO:System:
+2023-04-26 17:47:51,790:INFO:    python: 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)]
+2023-04-26 17:47:51,790:INFO:executable: c:\Users\tonim\AppData\Local\Programs\Python\Python37\python.exe
+2023-04-26 17:47:51,791:INFO:   machine: Windows-10-10.0.19041-SP0
+2023-04-26 17:47:51,791:INFO:PyCaret required dependencies:
+2023-04-26 17:47:51,791:INFO:                 pip: 22.2.2
+2023-04-26 17:47:51,791:INFO:          setuptools: 65.3.0
+2023-04-26 17:47:51,791:INFO:             pycaret: 3.0.0
+2023-04-26 17:47:51,791:INFO:             IPython: 7.34.0
+2023-04-26 17:47:51,791:INFO:          ipywidgets: 7.7.1
+2023-04-26 17:47:51,792:INFO:                tqdm: 4.64.0
+2023-04-26 17:47:51,792:INFO:               numpy: 1.21.6
+2023-04-26 17:47:51,792:INFO:              pandas: 1.3.5
+2023-04-26 17:47:51,792:INFO:              jinja2: 3.1.2
+2023-04-26 17:47:51,792:INFO:               scipy: 1.5.4
+2023-04-26 17:47:51,792:INFO:              joblib: 1.2.0
+2023-04-26 17:47:51,793:INFO:             sklearn: 1.0.2
+2023-04-26 17:47:51,793:INFO:                pyod: 1.0.9
+2023-04-26 17:47:51,793:INFO:            imblearn: 0.9.0
+2023-04-26 17:47:51,793:INFO:   category_encoders: 2.6.0
+2023-04-26 17:47:51,793:INFO:            lightgbm: 3.3.5
+2023-04-26 17:47:51,793:INFO:               numba: 0.56.0
+2023-04-26 17:47:51,793:INFO:            requests: 2.28.1
+2023-04-26 17:47:51,793:INFO:          matplotlib: 3.5.2
+2023-04-26 17:47:51,793:INFO:          scikitplot: 0.3.7
+2023-04-26 17:47:51,793:INFO:         yellowbrick: 1.5
+2023-04-26 17:47:51,794:INFO:              plotly: 5.9.0
+2023-04-26 17:47:51,794:INFO:             kaleido: 0.2.1
+2023-04-26 17:47:51,794:INFO:         statsmodels: 0.13.2
+2023-04-26 17:47:51,794:INFO:              sktime: 0.17.1
+2023-04-26 17:47:51,794:INFO:               tbats: 1.1.3
+2023-04-26 17:47:51,794:INFO:            pmdarima: 2.0.1
+2023-04-26 17:47:51,794:INFO:              psutil: 5.9.1
+2023-04-26 17:47:51,794:INFO:PyCaret optional dependencies:
+2023-04-26 17:47:51,794:INFO:                shap: 0.41.0
+2023-04-26 17:47:51,795:INFO:           interpret: Not installed
+2023-04-26 17:47:51,795:INFO:                umap: Not installed
+2023-04-26 17:47:51,795:INFO:    pandas_profiling: 3.3.0
+2023-04-26 17:47:51,795:INFO:  explainerdashboard: Not installed
+2023-04-26 17:47:51,795:INFO:             autoviz: Not installed
+2023-04-26 17:47:51,795:INFO:           fairlearn: Not installed
+2023-04-26 17:47:51,795:INFO:             xgboost: 1.6.2
+2023-04-26 17:47:51,795:INFO:            catboost: Not installed
+2023-04-26 17:47:51,795:INFO:              kmodes: Not installed
+2023-04-26 17:47:51,795:INFO:             mlxtend: Not installed
+2023-04-26 17:47:51,795:INFO:       statsforecast: Not installed
+2023-04-26 17:47:51,795:INFO:        tune_sklearn: Not installed
+2023-04-26 17:47:51,795:INFO:                 ray: Not installed
+2023-04-26 17:47:51,796:INFO:            hyperopt: 0.2.7
+2023-04-26 17:47:51,796:INFO:              optuna: Not installed
+2023-04-26 17:47:51,796:INFO:               skopt: Not installed
+2023-04-26 17:47:51,796:INFO:              mlflow: 1.30.1
+2023-04-26 17:47:51,796:INFO:              gradio: Not installed
+2023-04-26 17:47:51,796:INFO:             fastapi: Not installed
+2023-04-26 17:47:51,796:INFO:             uvicorn: Not installed
+2023-04-26 17:47:51,796:INFO:              m2cgen: Not installed
+2023-04-26 17:47:51,796:INFO:           evidently: Not installed
+2023-04-26 17:47:51,796:INFO:               fugue: Not installed
+2023-04-26 17:47:51,796:INFO:           streamlit: 1.11.0
+2023-04-26 17:47:51,796:INFO:             prophet: Not installed
+2023-04-26 17:47:51,796:INFO:None
+2023-04-26 17:47:51,796:INFO:Set up data.
+2023-04-26 17:47:52,309:INFO:Set up train/test split.
+2023-04-26 17:47:52,601:INFO:Set up index.
+2023-04-26 17:47:52,606:INFO:Set up folding strategy.
+2023-04-26 17:47:52,606:INFO:Assigning column types.
+2023-04-26 17:47:52,803:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-04-26 17:47:52,804:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-04-26 17:47:52,811:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-04-26 17:47:52,816:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-04-26 17:47:53,121:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:47:53,161:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:47:53,163:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:47:53,507:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:47:53,508:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-04-26 17:47:53,513:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-04-26 17:47:53,518:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-04-26 17:47:53,798:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:47:53,837:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:47:53,839:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:47:53,843:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:47:53,843:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-04-26 17:47:53,848:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-04-26 17:47:53,851:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-04-26 17:47:57,561:INFO:PyCaret RegressionExperiment
+2023-04-26 17:47:57,561:INFO:Logging name: price
+2023-04-26 17:47:57,561:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-04-26 17:47:57,562:INFO:version 3.0.0
+2023-04-26 17:47:57,562:INFO:Initializing setup()
+2023-04-26 17:47:57,562:INFO:self.USI: 86c2
+2023-04-26 17:47:57,562:INFO:self._variable_keys: {'exp_id', 'n_jobs_param', 'seed', 'log_plots_param', 'X', 'X_test', 'X_train', '_ml_usecase', 'USI', 'exp_name_log', 'y_test', 'gpu_n_jobs_param', 'gpu_param', 'fold_groups_param', 'y', 'data', 'fold_shuffle_param', 'y_train', 'fold_generator', 'target_param', 'pipeline', 'html_param', 'transform_target_param', 'idx', 'memory', '_available_plots', 'logging_param'}
+2023-04-26 17:47:57,562:INFO:Checking environment
+2023-04-26 17:47:57,562:INFO:python_version: 3.7.4
+2023-04-26 17:47:57,562:INFO:python_build: ('tags/v3.7.4:e09359112e', 'Jul  8 2019 20:34:20')
+2023-04-26 17:47:57,562:INFO:machine: AMD64
+2023-04-26 17:47:57,562:INFO:platform: Windows-10-10.0.19041-SP0
+2023-04-26 17:47:57,562:INFO:Memory: svmem(total=16907886592, available=1904226304, percent=88.7, used=15003660288, free=1904226304)
+2023-04-26 17:47:57,562:INFO:Physical Core: 4
+2023-04-26 17:47:57,562:INFO:Logical Core: 8
+2023-04-26 17:47:57,562:INFO:Checking libraries
+2023-04-26 17:47:57,562:INFO:System:
+2023-04-26 17:47:57,562:INFO:    python: 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 20:34:20) [MSC v.1916 64 bit (AMD64)]
+2023-04-26 17:47:57,562:INFO:executable: c:\Users\tonim\AppData\Local\Programs\Python\Python37\python.exe
+2023-04-26 17:47:57,562:INFO:   machine: Windows-10-10.0.19041-SP0
+2023-04-26 17:47:57,562:INFO:PyCaret required dependencies:
+2023-04-26 17:47:57,562:INFO:                 pip: 22.2.2
+2023-04-26 17:47:57,562:INFO:          setuptools: 65.3.0
+2023-04-26 17:47:57,562:INFO:             pycaret: 3.0.0
+2023-04-26 17:47:57,563:INFO:             IPython: 7.34.0
+2023-04-26 17:47:57,563:INFO:          ipywidgets: 7.7.1
+2023-04-26 17:47:57,563:INFO:                tqdm: 4.64.0
+2023-04-26 17:47:57,563:INFO:               numpy: 1.21.6
+2023-04-26 17:47:57,563:INFO:              pandas: 1.3.5
+2023-04-26 17:47:57,563:INFO:              jinja2: 3.1.2
+2023-04-26 17:47:57,563:INFO:               scipy: 1.5.4
+2023-04-26 17:47:57,563:INFO:              joblib: 1.2.0
+2023-04-26 17:47:57,563:INFO:             sklearn: 1.0.2
+2023-04-26 17:47:57,563:INFO:                pyod: 1.0.9
+2023-04-26 17:47:57,563:INFO:            imblearn: 0.9.0
+2023-04-26 17:47:57,563:INFO:   category_encoders: 2.6.0
+2023-04-26 17:47:57,563:INFO:            lightgbm: 3.3.5
+2023-04-26 17:47:57,563:INFO:               numba: 0.56.0
+2023-04-26 17:47:57,563:INFO:            requests: 2.28.1
+2023-04-26 17:47:57,563:INFO:          matplotlib: 3.5.2
+2023-04-26 17:47:57,563:INFO:          scikitplot: 0.3.7
+2023-04-26 17:47:57,563:INFO:         yellowbrick: 1.5
+2023-04-26 17:47:57,563:INFO:              plotly: 5.9.0
+2023-04-26 17:47:57,563:INFO:             kaleido: 0.2.1
+2023-04-26 17:47:57,563:INFO:         statsmodels: 0.13.2
+2023-04-26 17:47:57,563:INFO:              sktime: 0.17.1
+2023-04-26 17:47:57,563:INFO:               tbats: 1.1.3
+2023-04-26 17:47:57,563:INFO:            pmdarima: 2.0.1
+2023-04-26 17:47:57,563:INFO:              psutil: 5.9.1
+2023-04-26 17:47:57,563:INFO:PyCaret optional dependencies:
+2023-04-26 17:47:57,564:INFO:                shap: 0.41.0
+2023-04-26 17:47:57,564:INFO:           interpret: Not installed
+2023-04-26 17:47:57,564:INFO:                umap: Not installed
+2023-04-26 17:47:57,564:INFO:    pandas_profiling: 3.3.0
+2023-04-26 17:47:57,564:INFO:  explainerdashboard: Not installed
+2023-04-26 17:47:57,564:INFO:             autoviz: Not installed
+2023-04-26 17:47:57,564:INFO:           fairlearn: Not installed
+2023-04-26 17:47:57,564:INFO:             xgboost: 1.6.2
+2023-04-26 17:47:57,564:INFO:            catboost: Not installed
+2023-04-26 17:47:57,564:INFO:              kmodes: Not installed
+2023-04-26 17:47:57,564:INFO:             mlxtend: Not installed
+2023-04-26 17:47:57,564:INFO:       statsforecast: Not installed
+2023-04-26 17:47:57,564:INFO:        tune_sklearn: Not installed
+2023-04-26 17:47:57,564:INFO:                 ray: Not installed
+2023-04-26 17:47:57,564:INFO:            hyperopt: 0.2.7
+2023-04-26 17:47:57,564:INFO:              optuna: Not installed
+2023-04-26 17:47:57,564:INFO:               skopt: Not installed
+2023-04-26 17:47:57,564:INFO:              mlflow: 1.30.1
+2023-04-26 17:47:57,564:INFO:              gradio: Not installed
+2023-04-26 17:47:57,564:INFO:             fastapi: Not installed
+2023-04-26 17:47:57,564:INFO:             uvicorn: Not installed
+2023-04-26 17:47:57,564:INFO:              m2cgen: Not installed
+2023-04-26 17:47:57,564:INFO:           evidently: Not installed
+2023-04-26 17:47:57,564:INFO:               fugue: Not installed
+2023-04-26 17:47:57,564:INFO:           streamlit: 1.11.0
+2023-04-26 17:47:57,564:INFO:             prophet: Not installed
+2023-04-26 17:47:57,564:INFO:None
+2023-04-26 17:47:57,564:INFO:Set up data.
+2023-04-26 17:47:57,891:INFO:Set up train/test split.
+2023-04-26 17:47:58,125:INFO:Set up index.
+2023-04-26 17:47:58,130:INFO:Set up folding strategy.
+2023-04-26 17:47:58,130:INFO:Assigning column types.
+2023-04-26 17:47:58,309:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-04-26 17:47:58,309:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-04-26 17:47:58,313:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-04-26 17:47:58,317:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-04-26 17:47:58,622:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:47:58,662:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:47:58,662:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:47:58,664:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:47:58,665:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-04-26 17:47:58,669:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-04-26 17:47:58,673:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-04-26 17:47:58,981:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,030:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,031:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:47:59,033:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:47:59,033:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-04-26 17:47:59,040:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,044:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,360:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,402:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,403:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:47:59,405:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:47:59,410:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,414:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,697:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,763:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:47:59,764:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:47:59,766:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:47:59,766:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-04-26 17:47:59,777:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-04-26 17:48:00,050:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:48:00,091:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:48:00,092:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:00,094:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:00,104:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-04-26 17:48:00,419:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:48:00,461:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:48:00,461:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:00,465:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:00,465:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-04-26 17:48:00,760:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:48:00,799:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:48:00,800:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:00,803:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:02,197:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:48:02,239:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-26 17:48:02,240:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:02,242:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:02,242:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-04-26 17:48:02,528:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:48:02,569:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:02,572:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:02,873:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-04-26 17:48:02,923:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:02,926:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:02,926:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-04-26 17:48:03,252:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:03,255:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:03,580:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:03,583:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:03,598:INFO:Preparing preprocessing pipeline...
+2023-04-26 17:48:03,598:INFO:Set up simple imputation.
+2023-04-26 17:48:03,625:INFO:Set up column name cleaning.
+2023-04-26 17:48:04,525:INFO:Finished creating preprocessing pipeline.
+2023-04-26 17:48:04,539:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\tonim\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['kms_driven', 'owner', 'age',
+                                             'power',
+                                             'bike_name_BMW F750 GS 850cc',
+                                             'bike_name_BMW G 310 GS',
+                                             'bike_name_BMW G 310 R',
+                                             'bike_name_BMW S 1000 RR Pro',
+                                             'bike_name_BMW S 1000 XR Pro',
+                                             'bike_name_Bajaj  Pulsar 180cc',
+                                             'bike_name_Bajaj Avenger 150cc',...
+                                             'bike_name_Bajaj CT 100 Alloy',
+                                             'bike_name_Bajaj CT 100 B',
+                                             'bike_name_Bajaj CT 100 ES Alloy',
+                                             'bike_name_Bajaj CT 100 KS Alloy',
+                                             'bike_name_Bajaj CT 100 Spoke', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2023-04-26 17:48:04,539:INFO:Creating final display dataframe.
+2023-04-26 17:48:08,001:INFO:Setup _display_container:                     Description         Value
+0                    Session id           123
+1                        Target         price
+2                   Target type    Regression
+3           Original data shape  (32648, 942)
+4        Transformed data shape  (32648, 942)
+5   Transformed train set shape  (22853, 942)
+6    Transformed test set shape   (9795, 942)
+7              Numeric features           941
+8                    Preprocess          True
+9               Imputation type        simple
+10           Numeric imputation          mean
+11       Categorical imputation          mode
+12               Fold Generator         KFold
+13                  Fold Number            10
+14                     CPU Jobs            -1
+15                      Use GPU         False
+16               Log Experiment  MlflowLogger
+17              Experiment Name         price
+18                          USI          86c2
+2023-04-26 17:48:08,548:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:08,550:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:08,876:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 17:48:08,880:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 17:48:08,880:INFO:Logging experiment in loggers
+2023-04-26 17:48:11,093:INFO:SubProcess save_model() called ==================================
+2023-04-26 17:48:11,113:INFO:Initializing save_model()
+2023-04-26 17:48:11,113:INFO:save_model(model=Pipeline(memory=FastMemory(location=C:\Users\tonim\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['kms_driven', 'owner', 'age',
+                                             'power',
+                                             'bike_name_BMW F750 GS 850cc',
+                                             'bike_name_BMW G 310 GS',
+                                             'bike_name_BMW G 310 R',
+                                             'bike_name_BMW S 1000 RR Pro',
+                                             'bike_name_BMW S 1000 XR Pro',
+                                             'bike_name_Bajaj  Pulsar 180cc',
+                                             'bike_name_Bajaj Avenger 150cc',...
+                                             'bike_name_Bajaj CT 100 Alloy',
+                                             'bike_name_Bajaj CT 100 B',
+                                             'bike_name_Bajaj CT 100 ES Alloy',
+                                             'bike_name_Bajaj CT 100 KS Alloy',
+                                             'bike_name_Bajaj CT 100 Spoke', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))]), model_name=C:\Users\tonim\AppData\Local\Temp\tmpngc3riv6\Transformation Pipeline, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\tonim\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['kms_driven', 'owner', 'age',
+                                             'power',
+                                             'bike_name_BMW F750 GS 850cc',
+                                             'bike_name_BMW G 310 GS',
+                                             'bike_name_BMW G 310 R',
+                                             'bike_name_BMW S 1000 RR Pro',
+                                             'bike_name_BMW S 1000 XR Pro',
+                                             'bike_name_Bajaj  Pulsar 180cc',
+                                             'bike_name_Bajaj Avenger 150cc',...
+                                             'bike_name_Bajaj CT 100 Alloy',
+                                             'bike_name_Bajaj CT 100 B',
+                                             'bike_name_Bajaj CT 100 ES Alloy',
+                                             'bike_name_Bajaj CT 100 KS Alloy',
+                                             'bike_name_Bajaj CT 100 Spoke', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))]), verbose=False, use_case=MLUsecase.REGRESSION, kwargs={})
+2023-04-26 17:48:11,113:INFO:Adding model into prep_pipe
+2023-04-26 17:48:11,118:WARNING:Only Model saved as it was a pipeline.
+2023-04-26 17:48:11,136:INFO:C:\Users\tonim\AppData\Local\Temp\tmpngc3riv6\Transformation Pipeline.pkl saved in current working directory
+2023-04-26 17:48:11,149:INFO:Pipeline(memory=FastMemory(location=C:\Users\tonim\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['kms_driven', 'owner', 'age',
+                                             'power',
+                                             'bike_name_BMW F750 GS 850cc',
+                                             'bike_name_BMW G 310 GS',
+                                             'bike_name_BMW G 310 R',
+                                             'bike_name_BMW S 1000 RR Pro',
+                                             'bike_name_BMW S 1000 XR Pro',
+                                             'bike_name_Bajaj  Pulsar 180cc',
+                                             'bike_name_Bajaj Avenger 150cc',...
+                                             'bike_name_Bajaj CT 100 Alloy',
+                                             'bike_name_Bajaj CT 100 B',
+                                             'bike_name_Bajaj CT 100 ES Alloy',
+                                             'bike_name_Bajaj CT 100 KS Alloy',
+                                             'bike_name_Bajaj CT 100 Spoke', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('clean_column_names',
+                 TransformerWrapper(transformer=CleanColumnNames()))])
+2023-04-26 17:48:11,149:INFO:save_model() successfully completed......................................
+2023-04-26 17:48:11,320:INFO:SubProcess save_model() end ==================================
+2023-04-26 17:48:11,331:INFO:setup() successfully completed in 11.35s...............
+2023-04-26 17:48:36,304:INFO:Initializing compare_models()
+2023-04-26 17:48:36,304:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, include=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2023-04-26 17:48:36,304:INFO:Checking exceptions
+2023-04-26 17:48:36,431:INFO:Preparing display monitor
+2023-04-26 17:48:36,487:INFO:Initializing Linear Regression
+2023-04-26 17:48:36,487:INFO:Total runtime is 0.0 minutes
+2023-04-26 17:48:36,491:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:48:36,492:INFO:Initializing create_model()
+2023-04-26 17:48:36,492:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:48:36,492:INFO:Checking exceptions
+2023-04-26 17:48:36,492:INFO:Importing libraries
+2023-04-26 17:48:36,492:INFO:Copying training dataset
+2023-04-26 17:48:36,839:INFO:Defining folds
+2023-04-26 17:48:36,840:INFO:Declaring metric variables
+2023-04-26 17:48:36,843:INFO:Importing untrained model
+2023-04-26 17:48:36,847:INFO:Linear Regression Imported successfully
+2023-04-26 17:48:36,856:INFO:Starting cross validation
+2023-04-26 17:48:36,898:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:49:02,709:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:241: UserWarning: Persisting input arguments took 3.07s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  y=y,
+
+2023-04-26 17:49:02,709:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:241: UserWarning: Persisting input arguments took 3.29s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  y=y,
+
+2023-04-26 17:49:04,450:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:241: UserWarning: Persisting input arguments took 0.63s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  y=y,
+
+2023-04-26 17:49:04,466:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:241: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  y=y,
+
+2023-04-26 17:49:04,679:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:241: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  y=y,
+
+2023-04-26 17:49:04,687:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:241: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  y=y,
+
+2023-04-26 17:49:17,189:INFO:Calculating mean and std
+2023-04-26 17:49:17,197:INFO:Creating metrics dataframe
+2023-04-26 17:49:17,243:INFO:Uploading results into container
+2023-04-26 17:49:17,244:INFO:Uploading model into container now
+2023-04-26 17:49:17,246:INFO:_master_model_container: 1
+2023-04-26 17:49:17,246:INFO:_display_container: 2
+2023-04-26 17:49:17,248:INFO:LinearRegression(n_jobs=-1)
+2023-04-26 17:49:17,248:INFO:create_model() successfully completed......................................
+2023-04-26 17:49:17,625:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:49:17,625:INFO:Creating metrics dataframe
+2023-04-26 17:49:17,642:INFO:Initializing Lasso Regression
+2023-04-26 17:49:17,642:INFO:Total runtime is 0.6859089612960816 minutes
+2023-04-26 17:49:17,648:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:49:17,648:INFO:Initializing create_model()
+2023-04-26 17:49:17,648:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:49:17,649:INFO:Checking exceptions
+2023-04-26 17:49:17,649:INFO:Importing libraries
+2023-04-26 17:49:17,649:INFO:Copying training dataset
+2023-04-26 17:49:17,973:INFO:Defining folds
+2023-04-26 17:49:17,973:INFO:Declaring metric variables
+2023-04-26 17:49:17,976:INFO:Importing untrained model
+2023-04-26 17:49:17,983:INFO:Lasso Regression Imported successfully
+2023-04-26 17:49:17,990:INFO:Starting cross validation
+2023-04-26 17:49:17,996:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:49:51,757:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.512e+12, tolerance: 1.715e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:49:51,919:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.640e+12, tolerance: 1.730e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:49:52,558:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.594e+12, tolerance: 1.722e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:49:54,325:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.564e+12, tolerance: 1.705e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:49:54,433:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.679e+12, tolerance: 1.728e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:49:54,772:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.515e+12, tolerance: 1.703e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:49:55,088:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.607e+12, tolerance: 1.668e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:49:55,960:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.663e+12, tolerance: 1.763e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:50:08,280:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.668e+12, tolerance: 1.731e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:50:09,324:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.608e+12, tolerance: 1.668e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:50:09,682:INFO:Calculating mean and std
+2023-04-26 17:50:09,684:INFO:Creating metrics dataframe
+2023-04-26 17:50:09,725:INFO:Uploading results into container
+2023-04-26 17:50:09,726:INFO:Uploading model into container now
+2023-04-26 17:50:09,726:INFO:_master_model_container: 2
+2023-04-26 17:50:09,726:INFO:_display_container: 2
+2023-04-26 17:50:09,726:INFO:Lasso(random_state=123)
+2023-04-26 17:50:09,726:INFO:create_model() successfully completed......................................
+2023-04-26 17:50:09,867:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:50:09,867:INFO:Creating metrics dataframe
+2023-04-26 17:50:09,893:INFO:Initializing Ridge Regression
+2023-04-26 17:50:09,893:INFO:Total runtime is 1.556760068734487 minutes
+2023-04-26 17:50:09,897:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:50:09,897:INFO:Initializing create_model()
+2023-04-26 17:50:09,897:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:50:09,897:INFO:Checking exceptions
+2023-04-26 17:50:09,897:INFO:Importing libraries
+2023-04-26 17:50:09,898:INFO:Copying training dataset
+2023-04-26 17:50:10,196:INFO:Defining folds
+2023-04-26 17:50:10,196:INFO:Declaring metric variables
+2023-04-26 17:50:10,200:INFO:Importing untrained model
+2023-04-26 17:50:10,207:INFO:Ridge Regression Imported successfully
+2023-04-26 17:50:10,217:INFO:Starting cross validation
+2023-04-26 17:50:10,221:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:50:11,853:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=2.65249e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:12,064:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=3.03408e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:12,217:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=2.95142e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:12,307:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=2.38438e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:12,330:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=3.18688e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:12,366:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=2.86398e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:12,410:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=2.51035e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:12,416:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=2.5528e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:14,247:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=2.26095e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:14,289:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_ridge.py:157: LinAlgWarning: Ill-conditioned matrix (rcond=2.3952e-14): result may not be accurate.
+  return linalg.solve(A, Xy, sym_pos=True, overwrite_a=True).T
+
+2023-04-26 17:50:14,732:INFO:Calculating mean and std
+2023-04-26 17:50:14,735:INFO:Creating metrics dataframe
+2023-04-26 17:50:14,788:INFO:Uploading results into container
+2023-04-26 17:50:14,788:INFO:Uploading model into container now
+2023-04-26 17:50:14,789:INFO:_master_model_container: 3
+2023-04-26 17:50:14,789:INFO:_display_container: 2
+2023-04-26 17:50:14,789:INFO:Ridge(random_state=123)
+2023-04-26 17:50:14,789:INFO:create_model() successfully completed......................................
+2023-04-26 17:50:14,931:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:50:14,932:INFO:Creating metrics dataframe
+2023-04-26 17:50:14,968:INFO:Initializing Elastic Net
+2023-04-26 17:50:14,968:INFO:Total runtime is 1.6413450042406719 minutes
+2023-04-26 17:50:14,972:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:50:14,973:INFO:Initializing create_model()
+2023-04-26 17:50:14,973:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:50:14,973:INFO:Checking exceptions
+2023-04-26 17:50:14,973:INFO:Importing libraries
+2023-04-26 17:50:14,973:INFO:Copying training dataset
+2023-04-26 17:50:15,271:INFO:Defining folds
+2023-04-26 17:50:15,272:INFO:Declaring metric variables
+2023-04-26 17:50:15,276:INFO:Importing untrained model
+2023-04-26 17:50:15,281:INFO:Elastic Net Imported successfully
+2023-04-26 17:50:15,288:INFO:Starting cross validation
+2023-04-26 17:50:15,294:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:51:07,444:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.854e+13, tolerance: 1.730e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:07,451:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.788e+13, tolerance: 1.668e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:07,489:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.845e+13, tolerance: 1.705e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:07,678:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.595e+13, tolerance: 1.703e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:08,054:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.869e+13, tolerance: 1.715e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:08,176:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.879e+13, tolerance: 1.728e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:08,204:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.854e+13, tolerance: 1.763e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:08,888:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.776e+13, tolerance: 1.722e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:31,663:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.742e+13, tolerance: 1.731e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:31,728:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_coordinate_descent.py:648: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.756e+13, tolerance: 1.668e+10
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random, positive
+
+2023-04-26 17:51:32,299:INFO:Calculating mean and std
+2023-04-26 17:51:32,300:INFO:Creating metrics dataframe
+2023-04-26 17:51:32,364:INFO:Uploading results into container
+2023-04-26 17:51:32,365:INFO:Uploading model into container now
+2023-04-26 17:51:32,365:INFO:_master_model_container: 4
+2023-04-26 17:51:32,365:INFO:_display_container: 2
+2023-04-26 17:51:32,366:INFO:ElasticNet(random_state=123)
+2023-04-26 17:51:32,366:INFO:create_model() successfully completed......................................
+2023-04-26 17:51:32,518:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:51:32,518:INFO:Creating metrics dataframe
+2023-04-26 17:51:32,539:INFO:Initializing Least Angle Regression
+2023-04-26 17:51:32,539:INFO:Total runtime is 2.934198681513468 minutes
+2023-04-26 17:51:32,543:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:51:32,543:INFO:Initializing create_model()
+2023-04-26 17:51:32,543:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:51:32,543:INFO:Checking exceptions
+2023-04-26 17:51:32,543:INFO:Importing libraries
+2023-04-26 17:51:32,544:INFO:Copying training dataset
+2023-04-26 17:51:32,875:INFO:Defining folds
+2023-04-26 17:51:32,875:INFO:Declaring metric variables
+2023-04-26 17:51:32,880:INFO:Importing untrained model
+2023-04-26 17:51:32,885:INFO:Least Angle Regression Imported successfully
+2023-04-26 17:51:32,895:INFO:Starting cross validation
+2023-04-26 17:51:32,900:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:51:33,987:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:34,148:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:34,208:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:34,290:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:34,343:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:34,345:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:34,353:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:34,519:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:35,210:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 13 iterations, i.e. alpha=4.916e+01, with an active set of 13 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,212:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 15 iterations, i.e. alpha=4.806e+01, with an active set of 15 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,222:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 28 iterations, i.e. alpha=2.350e+01, with an active set of 28 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,224:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:35,287:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 70 iterations, i.e. alpha=1.153e+01, with an active set of 70 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,290:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 71 iterations, i.e. alpha=1.141e+01, with an active set of 71 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,479:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 118 iterations, i.e. alpha=5.641e+00, with an active set of 118 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,757:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 225 iterations, i.e. alpha=3.457e+00, with an active set of 222 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,863:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 87 iterations, i.e. alpha=7.997e+00, with an active set of 87 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,944:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 14 iterations, i.e. alpha=4.511e+01, with an active set of 14 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,964:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 31 iterations, i.e. alpha=2.388e+01, with an active set of 31 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:35,970:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:35,975:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:36,030:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 82 iterations, i.e. alpha=1.004e+01, with an active set of 82 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,065:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 214 iterations, i.e. alpha=2.115e+00, with an active set of 214 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,098:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 127 iterations, i.e. alpha=5.183e+00, with an active set of 125 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,202:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 298 iterations, i.e. alpha=1.049e+02, with an active set of 254 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,231:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:744: RuntimeWarning: overflow encountered in true_divide
+  z = -coef[active] / (least_squares + tiny32)
+
+2023-04-26 17:51:36,251:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 207 iterations, i.e. alpha=2.254e+00, with an active set of 204 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,264:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 88 iterations, i.e. alpha=8.057e+00, with an active set of 88 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,286:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:36,570:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 404 iterations, i.e. alpha=1.687e+09, with an active set of 366 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,680:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 423 iterations, i.e. alpha=7.477e-01, with an active set of 420 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,776:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 341 iterations, i.e. alpha=2.074e+01, with an active set of 318 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,831:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 348 iterations, i.e. alpha=1.024e+00, with an active set of 348 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:36,987:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 379 iterations, i.e. alpha=9.055e-01, with an active set of 379 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:37,061:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 478 iterations, i.e. alpha=1.028e+00, with an active set of 445 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:37,121:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:37,231:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+
+2023-04-26 17:51:37,232:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:739: RuntimeWarning: overflow encountered in true_divide
+  g2 = arrayfuncs.min_pos((C + Cov) / (AA + corr_eq_dir + tiny32))
+
+2023-04-26 17:51:37,233:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:740: RuntimeWarning: divide by zero encountered in true_divide
+  gamma_ = min(g1, g2, C / AA)
+
+2023-04-26 17:51:37,233:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:744: RuntimeWarning: overflow encountered in true_divide
+  z = -coef[active] / (least_squares + tiny32)
+
+2023-04-26 17:51:37,302:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 483 iterations, i.e. alpha=5.383e-01, with an active set of 483 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:37,316:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 488 iterations, i.e. alpha=5.338e-01, with an active set of 488 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:37,327:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:51:39,021:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:108: UserWarning: Persisting input arguments took 0.90s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-04-26 17:51:39,130:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.94s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:51:39,205:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:108: UserWarning: Persisting input arguments took 0.70s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-04-26 17:51:39,298:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.13s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:51:39,934:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.42s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:51:39,985:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.90s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:51:40,449:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.35s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:51:40,834:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.95s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:51:41,071:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.13s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:51:43,701:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:44,554:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), Lars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:51:44,902:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 12 iterations, i.e. alpha=4.996e+01, with an active set of 12 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:44,904:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:44,929:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 24 iterations, i.e. alpha=2.617e+01, with an active set of 24 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:44,979:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 73 iterations, i.e. alpha=1.112e+01, with an active set of 73 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:45,048:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 110 iterations, i.e. alpha=5.487e+00, with an active set of 110 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:45,191:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 193 iterations, i.e. alpha=2.384e+00, with an active set of 193 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:45,783:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 425 iterations, i.e. alpha=7.248e-01, with an active set of 420 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:46,265:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 182 iterations, i.e. alpha=3.131e+00, with an active set of 174 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:46,480:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:744: RuntimeWarning: overflow encountered in true_divide
+  z = -coef[active] / (least_squares + tiny32)
+
+2023-04-26 17:51:47,137:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.74s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:51:48,804:INFO:Calculating mean and std
+2023-04-26 17:51:48,810:INFO:Creating metrics dataframe
+2023-04-26 17:51:48,997:INFO:Uploading results into container
+2023-04-26 17:51:48,999:INFO:Uploading model into container now
+2023-04-26 17:51:49,000:INFO:_master_model_container: 5
+2023-04-26 17:51:49,000:INFO:_display_container: 2
+2023-04-26 17:51:49,002:INFO:Lars(random_state=123)
+2023-04-26 17:51:49,002:INFO:create_model() successfully completed......................................
+2023-04-26 17:51:49,271:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:51:49,271:INFO:Creating metrics dataframe
+2023-04-26 17:51:49,309:INFO:Initializing Lasso Least Angle Regression
+2023-04-26 17:51:49,310:INFO:Total runtime is 3.2137197057406106 minutes
+2023-04-26 17:51:49,318:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:51:49,319:INFO:Initializing create_model()
+2023-04-26 17:51:49,320:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:51:49,320:INFO:Checking exceptions
+2023-04-26 17:51:49,320:INFO:Importing libraries
+2023-04-26 17:51:49,321:INFO:Copying training dataset
+2023-04-26 17:51:49,841:INFO:Defining folds
+2023-04-26 17:51:49,841:INFO:Declaring metric variables
+2023-04-26 17:51:49,846:INFO:Importing untrained model
+2023-04-26 17:51:49,852:INFO:Lasso Least Angle Regression Imported successfully
+2023-04-26 17:51:49,861:INFO:Starting cross validation
+2023-04-26 17:51:49,871:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:51:51,493:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:51,561:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:51,586:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:51,609:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:51,704:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:51,706:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:51,774:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:51,833:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:54,403:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 88 iterations, i.e. alpha=8.057e+00, with an active set of 88 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,456:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 13 iterations, i.e. alpha=4.916e+01, with an active set of 13 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,459:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 15 iterations, i.e. alpha=4.806e+01, with an active set of 15 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,471:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 28 iterations, i.e. alpha=2.350e+01, with an active set of 28 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,473:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:54,528:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 70 iterations, i.e. alpha=1.153e+01, with an active set of 70 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,604:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 71 iterations, i.e. alpha=1.141e+01, with an active set of 71 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,673:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 118 iterations, i.e. alpha=5.641e+00, with an active set of 118 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,718:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:688: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 194 iterations, alpha=2.710e+00, previous alpha=2.603e+00, with an active set of 191 regressors.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,723:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:54,748:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:688: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 162 iterations, alpha=4.020e+00, previous alpha=3.863e+00, with an active set of 163 regressors.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,771:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:688: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 98 iterations, alpha=7.649e+00, previous alpha=7.642e+00, with an active set of 93 regressors.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,895:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 87 iterations, i.e. alpha=7.997e+00, with an active set of 87 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,900:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 14 iterations, i.e. alpha=4.511e+01, with an active set of 14 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,911:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 31 iterations, i.e. alpha=2.388e+01, with an active set of 31 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,914:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:54,954:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 82 iterations, i.e. alpha=1.004e+01, with an active set of 82 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:54,954:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:54,956:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:688: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 84 iterations, alpha=9.913e+00, previous alpha=9.849e+00, with an active set of 83 regressors.
+  ConvergenceWarning,
+
+2023-04-26 17:51:55,032:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 142 iterations, i.e. alpha=4.191e+00, with an active set of 138 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:55,033:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:688: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 134 iterations, alpha=4.562e+00, previous alpha=4.550e+00, with an active set of 133 regressors.
+  ConvergenceWarning,
+
+2023-04-26 17:51:55,042:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 214 iterations, i.e. alpha=2.115e+00, with an active set of 214 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:55,052:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:688: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 221 iterations, alpha=2.006e+00, previous alpha=1.987e+00, with an active set of 220 regressors.
+  ConvergenceWarning,
+
+2023-04-26 17:51:55,087:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 174 iterations, i.e. alpha=2.994e+00, with an active set of 170 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:55,214:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:744: RuntimeWarning: overflow encountered in true_divide
+  z = -coef[active] / (least_squares + tiny32)
+
+2023-04-26 17:51:55,245:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 348 iterations, i.e. alpha=1.024e+00, with an active set of 348 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:55,856:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:51:56,158:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:51:56,166:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.54s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:51:57,702:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:57,811:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), LassoLars())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+Set parameter alpha to: original_alpha * np.sqrt(n_samples). 
+  FutureWarning,
+
+2023-04-26 17:51:58,553:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 12 iterations, i.e. alpha=4.996e+01, with an active set of 12 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:58,554:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:735: RuntimeWarning: overflow encountered in true_divide
+  g1 = arrayfuncs.min_pos((C - Cov) / (AA - corr_eq_dir + tiny32))
+
+2023-04-26 17:51:58,560:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 24 iterations, i.e. alpha=2.617e+01, with an active set of 24 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:58,590:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 73 iterations, i.e. alpha=1.112e+01, with an active set of 73 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:58,624:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 110 iterations, i.e. alpha=5.487e+00, with an active set of 110 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:58,708:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:688: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 86 iterations, alpha=8.895e+00, previous alpha=8.885e+00, with an active set of 85 regressors.
+  ConvergenceWarning,
+
+2023-04-26 17:51:58,789:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:660: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 193 iterations, i.e. alpha=2.384e+00, with an active set of 193 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  ConvergenceWarning,
+
+2023-04-26 17:51:58,807:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_least_angle.py:688: ConvergenceWarning: Early stopping the lars path, as the residues are small and the current value of alpha is no longer well controlled. 196 iterations, alpha=2.382e+00, previous alpha=2.338e+00, with an active set of 195 regressors.
+  ConvergenceWarning,
+
+2023-04-26 17:51:59,272:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:51:59,560:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.68s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:52:00,633:INFO:Calculating mean and std
+2023-04-26 17:52:00,636:INFO:Creating metrics dataframe
+2023-04-26 17:52:00,792:INFO:Uploading results into container
+2023-04-26 17:52:00,793:INFO:Uploading model into container now
+2023-04-26 17:52:00,794:INFO:_master_model_container: 6
+2023-04-26 17:52:00,794:INFO:_display_container: 2
+2023-04-26 17:52:00,797:INFO:LassoLars(random_state=123)
+2023-04-26 17:52:00,797:INFO:create_model() successfully completed......................................
+2023-04-26 17:52:01,078:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:52:01,079:INFO:Creating metrics dataframe
+2023-04-26 17:52:01,109:INFO:Initializing Orthogonal Matching Pursuit
+2023-04-26 17:52:01,110:INFO:Total runtime is 3.410386367638906 minutes
+2023-04-26 17:52:01,117:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:52:01,118:INFO:Initializing create_model()
+2023-04-26 17:52:01,118:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:52:01,119:INFO:Checking exceptions
+2023-04-26 17:52:01,119:INFO:Importing libraries
+2023-04-26 17:52:01,119:INFO:Copying training dataset
+2023-04-26 17:52:01,677:INFO:Defining folds
+2023-04-26 17:52:01,678:INFO:Declaring metric variables
+2023-04-26 17:52:01,689:INFO:Importing untrained model
+2023-04-26 17:52:01,773:INFO:Orthogonal Matching Pursuit Imported successfully
+2023-04-26 17:52:01,796:INFO:Starting cross validation
+2023-04-26 17:52:01,815:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:52:03,761:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:03,820:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:03,895:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:03,909:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:03,942:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:03,953:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:04,025:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:04,042:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:06,006:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:52:06,094:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.80s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:52:06,213:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.77s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:52:06,311:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.94s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:52:08,429:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:08,435:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py:138: FutureWarning: The default of 'normalize' will be set to False in version 1.2 and deprecated in version 1.4.
+If you wish to scale the data, use Pipeline with a StandardScaler in a preprocessing stage. To reproduce the previous behavior:
+
+from sklearn.pipeline import make_pipeline
+
+model = make_pipeline(StandardScaler(with_mean=False), OrthogonalMatchingPursuit())
+
+If you wish to pass a sample_weight parameter, you need to pass it as a fit parameter to each step of the pipeline as follows:
+
+kwargs = {s[0] + '__sample_weight': sample_weight for s in model.steps}
+model.fit(X, y, **kwargs)
+
+
+  FutureWarning,
+
+2023-04-26 17:52:09,829:INFO:Calculating mean and std
+2023-04-26 17:52:09,831:INFO:Creating metrics dataframe
+2023-04-26 17:52:09,922:INFO:Uploading results into container
+2023-04-26 17:52:09,923:INFO:Uploading model into container now
+2023-04-26 17:52:09,923:INFO:_master_model_container: 7
+2023-04-26 17:52:09,923:INFO:_display_container: 2
+2023-04-26 17:52:09,924:INFO:OrthogonalMatchingPursuit()
+2023-04-26 17:52:09,924:INFO:create_model() successfully completed......................................
+2023-04-26 17:52:10,087:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:52:10,087:INFO:Creating metrics dataframe
+2023-04-26 17:52:10,106:INFO:Initializing Bayesian Ridge
+2023-04-26 17:52:10,106:INFO:Total runtime is 3.5603180726369223 minutes
+2023-04-26 17:52:10,110:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:52:10,110:INFO:Initializing create_model()
+2023-04-26 17:52:10,110:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:52:10,111:INFO:Checking exceptions
+2023-04-26 17:52:10,111:INFO:Importing libraries
+2023-04-26 17:52:10,111:INFO:Copying training dataset
+2023-04-26 17:52:10,440:INFO:Defining folds
+2023-04-26 17:52:10,441:INFO:Declaring metric variables
+2023-04-26 17:52:10,445:INFO:Importing untrained model
+2023-04-26 17:52:10,450:INFO:Bayesian Ridge Imported successfully
+2023-04-26 17:52:10,457:INFO:Starting cross validation
+2023-04-26 17:52:10,463:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:52:50,821:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.73s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:53:09,974:INFO:Calculating mean and std
+2023-04-26 17:53:09,977:INFO:Creating metrics dataframe
+2023-04-26 17:53:10,080:INFO:Uploading results into container
+2023-04-26 17:53:10,081:INFO:Uploading model into container now
+2023-04-26 17:53:10,123:INFO:_master_model_container: 8
+2023-04-26 17:53:10,123:INFO:_display_container: 2
+2023-04-26 17:53:10,124:INFO:BayesianRidge()
+2023-04-26 17:53:10,124:INFO:create_model() successfully completed......................................
+2023-04-26 17:53:10,605:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:53:10,605:INFO:Creating metrics dataframe
+2023-04-26 17:53:10,662:INFO:Initializing Passive Aggressive Regressor
+2023-04-26 17:53:10,662:INFO:Total runtime is 4.569578317801158 minutes
+2023-04-26 17:53:10,667:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:53:10,668:INFO:Initializing create_model()
+2023-04-26 17:53:10,668:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:53:10,668:INFO:Checking exceptions
+2023-04-26 17:53:10,668:INFO:Importing libraries
+2023-04-26 17:53:10,668:INFO:Copying training dataset
+2023-04-26 17:53:10,966:INFO:Defining folds
+2023-04-26 17:53:10,966:INFO:Declaring metric variables
+2023-04-26 17:53:11,008:INFO:Importing untrained model
+2023-04-26 17:53:11,015:INFO:Passive Aggressive Regressor Imported successfully
+2023-04-26 17:53:11,024:INFO:Starting cross validation
+2023-04-26 17:53:11,028:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:53:15,651:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:53:19,257:INFO:Calculating mean and std
+2023-04-26 17:53:19,259:INFO:Creating metrics dataframe
+2023-04-26 17:53:19,339:INFO:Uploading results into container
+2023-04-26 17:53:19,340:INFO:Uploading model into container now
+2023-04-26 17:53:19,340:INFO:_master_model_container: 9
+2023-04-26 17:53:19,340:INFO:_display_container: 2
+2023-04-26 17:53:19,340:INFO:PassiveAggressiveRegressor(random_state=123)
+2023-04-26 17:53:19,340:INFO:create_model() successfully completed......................................
+2023-04-26 17:53:19,486:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:53:19,487:INFO:Creating metrics dataframe
+2023-04-26 17:53:20,075:INFO:Initializing Huber Regressor
+2023-04-26 17:53:20,075:INFO:Total runtime is 4.7264670332272845 minutes
+2023-04-26 17:53:20,080:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:53:20,081:INFO:Initializing create_model()
+2023-04-26 17:53:20,081:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:53:20,082:INFO:Checking exceptions
+2023-04-26 17:53:20,082:INFO:Importing libraries
+2023-04-26 17:53:20,082:INFO:Copying training dataset
+2023-04-26 17:53:20,386:INFO:Defining folds
+2023-04-26 17:53:20,386:INFO:Declaring metric variables
+2023-04-26 17:53:20,391:INFO:Importing untrained model
+2023-04-26 17:53:20,395:INFO:Huber Regressor Imported successfully
+2023-04-26 17:53:20,403:INFO:Starting cross validation
+2023-04-26 17:53:20,408:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:53:56,451:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:53:57,762:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:54:11,033:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.13s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:54:32,587:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_huber.py:332: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-04-26 17:54:36,100:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_huber.py:332: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2023-04-26 17:54:36,777:INFO:Calculating mean and std
+2023-04-26 17:54:36,780:INFO:Creating metrics dataframe
+2023-04-26 17:54:36,865:INFO:Uploading results into container
+2023-04-26 17:54:36,865:INFO:Uploading model into container now
+2023-04-26 17:54:36,866:INFO:_master_model_container: 10
+2023-04-26 17:54:36,866:INFO:_display_container: 2
+2023-04-26 17:54:36,866:INFO:HuberRegressor()
+2023-04-26 17:54:36,866:INFO:create_model() successfully completed......................................
+2023-04-26 17:54:37,022:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:54:37,022:INFO:Creating metrics dataframe
+2023-04-26 17:54:37,042:INFO:Initializing K Neighbors Regressor
+2023-04-26 17:54:37,042:INFO:Total runtime is 6.009256402651468 minutes
+2023-04-26 17:54:37,045:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:54:37,046:INFO:Initializing create_model()
+2023-04-26 17:54:37,046:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:54:37,046:INFO:Checking exceptions
+2023-04-26 17:54:37,046:INFO:Importing libraries
+2023-04-26 17:54:37,046:INFO:Copying training dataset
+2023-04-26 17:54:37,331:INFO:Defining folds
+2023-04-26 17:54:37,331:INFO:Declaring metric variables
+2023-04-26 17:54:37,335:INFO:Importing untrained model
+2023-04-26 17:54:37,340:INFO:K Neighbors Regressor Imported successfully
+2023-04-26 17:54:37,349:INFO:Starting cross validation
+2023-04-26 17:54:37,356:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:54:39,135:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:54:39,240:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:54:53,130:INFO:Calculating mean and std
+2023-04-26 17:54:53,132:INFO:Creating metrics dataframe
+2023-04-26 17:54:53,220:INFO:Uploading results into container
+2023-04-26 17:54:53,220:INFO:Uploading model into container now
+2023-04-26 17:54:53,221:INFO:_master_model_container: 11
+2023-04-26 17:54:53,221:INFO:_display_container: 2
+2023-04-26 17:54:53,221:INFO:KNeighborsRegressor(n_jobs=-1)
+2023-04-26 17:54:53,221:INFO:create_model() successfully completed......................................
+2023-04-26 17:54:53,382:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:54:53,382:INFO:Creating metrics dataframe
+2023-04-26 17:54:53,404:INFO:Initializing Decision Tree Regressor
+2023-04-26 17:54:53,404:INFO:Total runtime is 6.28194727897644 minutes
+2023-04-26 17:54:53,408:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:54:53,409:INFO:Initializing create_model()
+2023-04-26 17:54:53,409:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:54:53,409:INFO:Checking exceptions
+2023-04-26 17:54:53,409:INFO:Importing libraries
+2023-04-26 17:54:53,409:INFO:Copying training dataset
+2023-04-26 17:54:53,734:INFO:Defining folds
+2023-04-26 17:54:53,734:INFO:Declaring metric variables
+2023-04-26 17:54:53,738:INFO:Importing untrained model
+2023-04-26 17:54:53,743:INFO:Decision Tree Regressor Imported successfully
+2023-04-26 17:54:53,751:INFO:Starting cross validation
+2023-04-26 17:54:53,755:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:54:58,451:INFO:Calculating mean and std
+2023-04-26 17:54:58,455:INFO:Creating metrics dataframe
+2023-04-26 17:54:58,599:INFO:Uploading results into container
+2023-04-26 17:54:58,599:INFO:Uploading model into container now
+2023-04-26 17:54:58,600:INFO:_master_model_container: 12
+2023-04-26 17:54:58,600:INFO:_display_container: 2
+2023-04-26 17:54:58,600:INFO:DecisionTreeRegressor(random_state=123)
+2023-04-26 17:54:58,600:INFO:create_model() successfully completed......................................
+2023-04-26 17:54:58,747:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:54:58,748:INFO:Creating metrics dataframe
+2023-04-26 17:54:58,767:INFO:Initializing Random Forest Regressor
+2023-04-26 17:54:58,768:INFO:Total runtime is 6.371347216765085 minutes
+2023-04-26 17:54:58,771:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:54:58,771:INFO:Initializing create_model()
+2023-04-26 17:54:58,771:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:54:58,771:INFO:Checking exceptions
+2023-04-26 17:54:58,772:INFO:Importing libraries
+2023-04-26 17:54:58,772:INFO:Copying training dataset
+2023-04-26 17:54:59,089:INFO:Defining folds
+2023-04-26 17:54:59,089:INFO:Declaring metric variables
+2023-04-26 17:54:59,093:INFO:Importing untrained model
+2023-04-26 17:54:59,100:INFO:Random Forest Regressor Imported successfully
+2023-04-26 17:54:59,107:INFO:Starting cross validation
+2023-04-26 17:54:59,114:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:56:01,743:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.70s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:56:02,031:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.99s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:56:03,187:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:56:03,289:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:56:04,155:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:56:21,764:INFO:Calculating mean and std
+2023-04-26 17:56:21,766:INFO:Creating metrics dataframe
+2023-04-26 17:56:21,882:INFO:Uploading results into container
+2023-04-26 17:56:21,883:INFO:Uploading model into container now
+2023-04-26 17:56:21,883:INFO:_master_model_container: 13
+2023-04-26 17:56:21,883:INFO:_display_container: 2
+2023-04-26 17:56:21,884:INFO:RandomForestRegressor(n_jobs=-1, random_state=123)
+2023-04-26 17:56:21,884:INFO:create_model() successfully completed......................................
+2023-04-26 17:56:22,035:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:56:22,035:INFO:Creating metrics dataframe
+2023-04-26 17:56:22,053:INFO:Initializing Extra Trees Regressor
+2023-04-26 17:56:22,053:INFO:Total runtime is 7.7594397306442255 minutes
+2023-04-26 17:56:22,058:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:56:22,058:INFO:Initializing create_model()
+2023-04-26 17:56:22,059:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:56:22,059:INFO:Checking exceptions
+2023-04-26 17:56:22,059:INFO:Importing libraries
+2023-04-26 17:56:22,059:INFO:Copying training dataset
+2023-04-26 17:56:22,362:INFO:Defining folds
+2023-04-26 17:56:22,362:INFO:Declaring metric variables
+2023-04-26 17:56:22,368:INFO:Importing untrained model
+2023-04-26 17:56:22,374:INFO:Extra Trees Regressor Imported successfully
+2023-04-26 17:56:22,385:INFO:Starting cross validation
+2023-04-26 17:56:22,392:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:58:16,314:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:58:16,543:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.76s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:58:16,848:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.65s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:58:16,924:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.77s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:58:17,047:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:261: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  clone(self.steps[-1][1]), X, y, **fit_params_last_step
+
+2023-04-26 17:58:17,774:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:58:17,817:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.59s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:58:18,205:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.64s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:58:18,218:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:58:18,227:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.63s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:58:18,229:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.69s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 17:58:52,575:INFO:Calculating mean and std
+2023-04-26 17:58:52,579:INFO:Creating metrics dataframe
+2023-04-26 17:58:52,799:INFO:Uploading results into container
+2023-04-26 17:58:52,800:INFO:Uploading model into container now
+2023-04-26 17:58:52,801:INFO:_master_model_container: 14
+2023-04-26 17:58:52,801:INFO:_display_container: 2
+2023-04-26 17:58:52,801:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2023-04-26 17:58:52,802:INFO:create_model() successfully completed......................................
+2023-04-26 17:58:53,001:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:58:53,001:INFO:Creating metrics dataframe
+2023-04-26 17:58:53,025:INFO:Initializing AdaBoost Regressor
+2023-04-26 17:58:53,025:INFO:Total runtime is 10.275629615783691 minutes
+2023-04-26 17:58:53,030:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:58:53,031:INFO:Initializing create_model()
+2023-04-26 17:58:53,031:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:58:53,031:INFO:Checking exceptions
+2023-04-26 17:58:53,032:INFO:Importing libraries
+2023-04-26 17:58:53,032:INFO:Copying training dataset
+2023-04-26 17:58:53,505:INFO:Defining folds
+2023-04-26 17:58:53,506:INFO:Declaring metric variables
+2023-04-26 17:58:53,512:INFO:Importing untrained model
+2023-04-26 17:58:53,517:INFO:AdaBoost Regressor Imported successfully
+2023-04-26 17:58:53,526:INFO:Starting cross validation
+2023-04-26 17:58:53,533:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 17:59:43,626:INFO:Calculating mean and std
+2023-04-26 17:59:43,629:INFO:Creating metrics dataframe
+2023-04-26 17:59:43,743:INFO:Uploading results into container
+2023-04-26 17:59:43,744:INFO:Uploading model into container now
+2023-04-26 17:59:43,744:INFO:_master_model_container: 15
+2023-04-26 17:59:43,744:INFO:_display_container: 2
+2023-04-26 17:59:43,744:INFO:AdaBoostRegressor(random_state=123)
+2023-04-26 17:59:43,744:INFO:create_model() successfully completed......................................
+2023-04-26 17:59:43,906:INFO:SubProcess create_model() end ==================================
+2023-04-26 17:59:43,906:INFO:Creating metrics dataframe
+2023-04-26 17:59:43,924:INFO:Initializing Gradient Boosting Regressor
+2023-04-26 17:59:43,925:INFO:Total runtime is 11.123969944318135 minutes
+2023-04-26 17:59:43,929:INFO:SubProcess create_model() called ==================================
+2023-04-26 17:59:43,929:INFO:Initializing create_model()
+2023-04-26 17:59:43,929:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 17:59:43,930:INFO:Checking exceptions
+2023-04-26 17:59:43,930:INFO:Importing libraries
+2023-04-26 17:59:43,930:INFO:Copying training dataset
+2023-04-26 17:59:44,229:INFO:Defining folds
+2023-04-26 17:59:44,229:INFO:Declaring metric variables
+2023-04-26 17:59:44,234:INFO:Importing untrained model
+2023-04-26 17:59:44,239:INFO:Gradient Boosting Regressor Imported successfully
+2023-04-26 17:59:44,248:INFO:Starting cross validation
+2023-04-26 17:59:44,252:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 18:00:29,301:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.54s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 18:00:29,514:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 18:00:30,008:WARNING:c:\Users\tonim\AppData\Local\Programs\Python\Python37\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.58s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-26 18:00:52,890:INFO:Calculating mean and std
+2023-04-26 18:00:52,891:INFO:Creating metrics dataframe
+2023-04-26 18:00:53,018:INFO:Uploading results into container
+2023-04-26 18:00:53,019:INFO:Uploading model into container now
+2023-04-26 18:00:53,019:INFO:_master_model_container: 16
+2023-04-26 18:00:53,019:INFO:_display_container: 2
+2023-04-26 18:00:53,020:INFO:GradientBoostingRegressor(random_state=123)
+2023-04-26 18:00:53,020:INFO:create_model() successfully completed......................................
+2023-04-26 18:00:53,171:INFO:SubProcess create_model() end ==================================
+2023-04-26 18:00:53,171:INFO:Creating metrics dataframe
+2023-04-26 18:00:53,193:INFO:Initializing Extreme Gradient Boosting
+2023-04-26 18:00:53,194:INFO:Total runtime is 12.278446765740712 minutes
+2023-04-26 18:00:53,199:INFO:SubProcess create_model() called ==================================
+2023-04-26 18:00:53,200:INFO:Initializing create_model()
+2023-04-26 18:00:53,200:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=xgboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 18:00:53,200:INFO:Checking exceptions
+2023-04-26 18:00:53,200:INFO:Importing libraries
+2023-04-26 18:00:53,200:INFO:Copying training dataset
+2023-04-26 18:00:53,515:INFO:Defining folds
+2023-04-26 18:00:53,515:INFO:Declaring metric variables
+2023-04-26 18:00:53,519:INFO:Importing untrained model
+2023-04-26 18:00:53,526:INFO:Extreme Gradient Boosting Imported successfully
+2023-04-26 18:00:53,535:INFO:Starting cross validation
+2023-04-26 18:00:53,541:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 18:05:00,300:INFO:Calculating mean and std
+2023-04-26 18:05:00,302:INFO:Creating metrics dataframe
+2023-04-26 18:05:00,433:INFO:Uploading results into container
+2023-04-26 18:05:00,434:INFO:Uploading model into container now
+2023-04-26 18:05:00,434:INFO:_master_model_container: 17
+2023-04-26 18:05:00,435:INFO:_display_container: 2
+2023-04-26 18:05:00,436:INFO:XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, gamma=None,
+             gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_to_onehot=None, max_delta_step=None, max_depth=None,
+             max_leaves=None, min_child_weight=None, missing=nan,
+             monotone_constraints=None, n_estimators=100, n_jobs=-1,
+             num_parallel_tree=None, predictor=None, random_state=123,
+             reg_alpha=None, reg_lambda=None, ...)
+2023-04-26 18:05:00,436:INFO:create_model() successfully completed......................................
+2023-04-26 18:05:00,607:INFO:SubProcess create_model() end ==================================
+2023-04-26 18:05:00,607:INFO:Creating metrics dataframe
+2023-04-26 18:05:00,627:INFO:Initializing Light Gradient Boosting Machine
+2023-04-26 18:05:00,629:INFO:Total runtime is 16.402365489800772 minutes
+2023-04-26 18:05:00,633:INFO:SubProcess create_model() called ==================================
+2023-04-26 18:05:00,633:INFO:Initializing create_model()
+2023-04-26 18:05:00,634:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 18:05:00,634:INFO:Checking exceptions
+2023-04-26 18:05:00,634:INFO:Importing libraries
+2023-04-26 18:05:00,634:INFO:Copying training dataset
+2023-04-26 18:05:00,935:INFO:Defining folds
+2023-04-26 18:05:00,936:INFO:Declaring metric variables
+2023-04-26 18:05:00,940:INFO:Importing untrained model
+2023-04-26 18:05:00,945:INFO:Light Gradient Boosting Machine Imported successfully
+2023-04-26 18:05:00,953:INFO:Starting cross validation
+2023-04-26 18:05:00,959:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 18:05:06,018:INFO:Calculating mean and std
+2023-04-26 18:05:06,020:INFO:Creating metrics dataframe
+2023-04-26 18:05:06,184:INFO:Uploading results into container
+2023-04-26 18:05:06,185:INFO:Uploading model into container now
+2023-04-26 18:05:06,186:INFO:_master_model_container: 18
+2023-04-26 18:05:06,186:INFO:_display_container: 2
+2023-04-26 18:05:06,186:INFO:LGBMRegressor(random_state=123)
+2023-04-26 18:05:06,186:INFO:create_model() successfully completed......................................
+2023-04-26 18:05:06,325:INFO:SubProcess create_model() end ==================================
+2023-04-26 18:05:06,325:INFO:Creating metrics dataframe
+2023-04-26 18:05:06,349:INFO:Initializing Dummy Regressor
+2023-04-26 18:05:06,349:INFO:Total runtime is 16.497707307338715 minutes
+2023-04-26 18:05:06,352:INFO:SubProcess create_model() called ==================================
+2023-04-26 18:05:06,353:INFO:Initializing create_model()
+2023-04-26 18:05:06,353:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001A8378FBB08>, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 18:05:06,353:INFO:Checking exceptions
+2023-04-26 18:05:06,353:INFO:Importing libraries
+2023-04-26 18:05:06,353:INFO:Copying training dataset
+2023-04-26 18:05:06,664:INFO:Defining folds
+2023-04-26 18:05:06,664:INFO:Declaring metric variables
+2023-04-26 18:05:06,668:INFO:Importing untrained model
+2023-04-26 18:05:06,673:INFO:Dummy Regressor Imported successfully
+2023-04-26 18:05:06,683:INFO:Starting cross validation
+2023-04-26 18:05:06,688:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-26 18:05:09,901:INFO:Calculating mean and std
+2023-04-26 18:05:09,904:INFO:Creating metrics dataframe
+2023-04-26 18:05:10,048:INFO:Uploading results into container
+2023-04-26 18:05:10,049:INFO:Uploading model into container now
+2023-04-26 18:05:10,049:INFO:_master_model_container: 19
+2023-04-26 18:05:10,049:INFO:_display_container: 2
+2023-04-26 18:05:10,049:INFO:DummyRegressor()
+2023-04-26 18:05:10,050:INFO:create_model() successfully completed......................................
+2023-04-26 18:05:10,192:INFO:SubProcess create_model() end ==================================
+2023-04-26 18:05:10,193:INFO:Creating metrics dataframe
+2023-04-26 18:05:10,232:INFO:Initializing create_model()
+2023-04-26 18:05:10,232:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=123), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-04-26 18:05:10,232:INFO:Checking exceptions
+2023-04-26 18:05:10,241:INFO:Importing libraries
+2023-04-26 18:05:10,241:INFO:Copying training dataset
+2023-04-26 18:05:10,545:INFO:Defining folds
+2023-04-26 18:05:10,545:INFO:Declaring metric variables
+2023-04-26 18:05:10,546:INFO:Importing untrained model
+2023-04-26 18:05:10,546:INFO:Declaring custom model
+2023-04-26 18:05:10,546:INFO:Extra Trees Regressor Imported successfully
+2023-04-26 18:05:10,551:INFO:Cross validation set to False
+2023-04-26 18:05:10,551:INFO:Fitting Model
+2023-04-26 18:05:28,858:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2023-04-26 18:05:28,858:INFO:create_model() successfully completed......................................
+2023-04-26 18:05:29,017:INFO:Creating Dashboard logs
+2023-04-26 18:05:29,023:INFO:Model: Extra Trees Regressor
+2023-04-26 18:05:29,077:INFO:Logged params: {'bootstrap': False, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': -1, 'oob_score': False, 'random_state': 123, 'verbose': 0, 'warm_start': False}
+2023-04-26 18:05:29,141:INFO:Initializing predict_model()
+2023-04-26 18:05:29,141:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=123), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=False, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000001A839B75C18>)
+2023-04-26 18:05:29,141:INFO:Checking exceptions
+2023-04-26 18:05:29,141:INFO:Preloading libraries
+2023-04-26 18:05:30,947:INFO:Creating Dashboard logs
+2023-04-26 18:05:30,952:INFO:Model: Extreme Gradient Boosting
+2023-04-26 18:05:30,978:INFO:Logged params: {'objective': 'reg:squarederror', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'gamma': None, 'gpu_id': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': None, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'n_estimators': 100, 'n_jobs': -1, 'num_parallel_tree': None, 'predictor': None, 'random_state': 123, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'auto', 'validate_parameters': None, 'verbosity': 0}
+2023-04-26 18:05:31,358:INFO:Creating Dashboard logs
+2023-04-26 18:05:31,361:INFO:Model: Random Forest Regressor
+2023-04-26 18:05:31,390:INFO:Logged params: {'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': -1, 'oob_score': False, 'random_state': 123, 'verbose': 0, 'warm_start': False}
+2023-04-26 18:05:31,766:INFO:Creating Dashboard logs
+2023-04-26 18:05:31,770:INFO:Model: Gradient Boosting Regressor
+2023-04-26 18:05:31,798:INFO:Logged params: {'alpha': 0.9, 'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'squared_error', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': 123, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2023-04-26 18:05:32,159:INFO:Creating Dashboard logs
+2023-04-26 18:05:32,163:INFO:Model: Decision Tree Regressor
+2023-04-26 18:05:32,190:INFO:Logged params: {'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': 123, 'splitter': 'best'}
+2023-04-26 18:05:32,546:INFO:Creating Dashboard logs
+2023-04-26 18:05:32,551:INFO:Model: Bayesian Ridge
+2023-04-26 18:05:32,576:INFO:Logged params: {'alpha_1': 1e-06, 'alpha_2': 1e-06, 'alpha_init': None, 'compute_score': False, 'copy_X': True, 'fit_intercept': True, 'lambda_1': 1e-06, 'lambda_2': 1e-06, 'lambda_init': None, 'n_iter': 300, 'normalize': 'deprecated', 'tol': 0.001, 'verbose': False}
+2023-04-26 18:05:32,929:INFO:Creating Dashboard logs
+2023-04-26 18:05:32,934:INFO:Model: Ridge Regression
+2023-04-26 18:05:32,960:INFO:Logged params: {'alpha': 1.0, 'copy_X': True, 'fit_intercept': True, 'max_iter': None, 'normalize': 'deprecated', 'positive': False, 'random_state': 123, 'solver': 'auto', 'tol': 0.001}
+2023-04-26 18:05:33,468:INFO:Creating Dashboard logs
+2023-04-26 18:05:33,472:INFO:Model: Light Gradient Boosting Machine
+2023-04-26 18:05:33,501:INFO:Logged params: {'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.1, 'max_depth': -1, 'min_child_samples': 20, 'min_child_weight': 0.001, 'min_split_gain': 0.0, 'n_estimators': 100, 'n_jobs': -1, 'num_leaves': 31, 'objective': None, 'random_state': 123, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'silent': 'warn', 'subsample': 1.0, 'subsample_for_bin': 200000, 'subsample_freq': 0}
+2023-04-26 18:05:34,022:INFO:Creating Dashboard logs
+2023-04-26 18:05:34,027:INFO:Model: Linear Regression
+2023-04-26 18:05:34,058:INFO:Logged params: {'copy_X': True, 'fit_intercept': True, 'n_jobs': -1, 'normalize': 'deprecated', 'positive': False}
+2023-04-26 18:05:34,408:INFO:Creating Dashboard logs
+2023-04-26 18:05:34,413:INFO:Model: Lasso Regression
+2023-04-26 18:05:34,440:INFO:Logged params: {'alpha': 1.0, 'copy_X': True, 'fit_intercept': True, 'max_iter': 1000, 'normalize': 'deprecated', 'positive': False, 'precompute': False, 'random_state': 123, 'selection': 'cyclic', 'tol': 0.0001, 'warm_start': False}
+2023-04-26 18:05:34,802:INFO:Creating Dashboard logs
+2023-04-26 18:05:34,807:INFO:Model: Orthogonal Matching Pursuit
+2023-04-26 18:05:34,841:INFO:Logged params: {'fit_intercept': True, 'n_nonzero_coefs': None, 'normalize': 'deprecated', 'precompute': 'auto', 'tol': None}
+2023-04-26 18:05:35,181:INFO:Creating Dashboard logs
+2023-04-26 18:05:35,185:INFO:Model: Lasso Least Angle Regression
+2023-04-26 18:05:35,214:INFO:Logged params: {'alpha': 1.0, 'copy_X': True, 'eps': 2.220446049250313e-16, 'fit_intercept': True, 'fit_path': True, 'jitter': None, 'max_iter': 500, 'normalize': 'deprecated', 'positive': False, 'precompute': 'auto', 'random_state': 123, 'verbose': False}
+2023-04-26 18:05:35,570:INFO:Creating Dashboard logs
+2023-04-26 18:05:35,572:INFO:Model: K Neighbors Regressor
+2023-04-26 18:05:35,599:INFO:Logged params: {'algorithm': 'auto', 'leaf_size': 30, 'metric': 'minkowski', 'metric_params': None, 'n_jobs': -1, 'n_neighbors': 5, 'p': 2, 'weights': 'uniform'}
+2023-04-26 18:05:35,954:INFO:Creating Dashboard logs
+2023-04-26 18:05:35,958:INFO:Model: AdaBoost Regressor
+2023-04-26 18:05:35,986:INFO:Logged params: {'base_estimator': None, 'learning_rate': 1.0, 'loss': 'linear', 'n_estimators': 50, 'random_state': 123}
+2023-04-26 18:05:36,335:INFO:Creating Dashboard logs
+2023-04-26 18:05:36,339:INFO:Model: Elastic Net
+2023-04-26 18:05:36,372:INFO:Logged params: {'alpha': 1.0, 'copy_X': True, 'fit_intercept': True, 'l1_ratio': 0.5, 'max_iter': 1000, 'normalize': 'deprecated', 'positive': False, 'precompute': False, 'random_state': 123, 'selection': 'cyclic', 'tol': 0.0001, 'warm_start': False}
+2023-04-26 18:05:36,852:INFO:Creating Dashboard logs
+2023-04-26 18:05:36,859:INFO:Model: Huber Regressor
+2023-04-26 18:05:36,909:INFO:Logged params: {'alpha': 0.0001, 'epsilon': 1.35, 'fit_intercept': True, 'max_iter': 100, 'tol': 1e-05, 'warm_start': False}
+2023-04-26 18:05:37,326:INFO:Creating Dashboard logs
+2023-04-26 18:05:37,335:INFO:Model: Dummy Regressor
+2023-04-26 18:05:37,422:INFO:Logged params: {'constant': None, 'quantile': None, 'strategy': 'mean'}
+2023-04-26 18:05:37,826:INFO:Creating Dashboard logs
+2023-04-26 18:05:37,831:INFO:Model: Passive Aggressive Regressor
+2023-04-26 18:05:37,857:INFO:Logged params: {'C': 1.0, 'average': False, 'early_stopping': False, 'epsilon': 0.1, 'fit_intercept': True, 'loss': 'epsilon_insensitive', 'max_iter': 1000, 'n_iter_no_change': 5, 'random_state': 123, 'shuffle': True, 'tol': 0.001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2023-04-26 18:05:38,207:INFO:Creating Dashboard logs
+2023-04-26 18:05:38,212:INFO:Model: Least Angle Regression
+2023-04-26 18:05:38,240:INFO:Logged params: {'copy_X': True, 'eps': 2.220446049250313e-16, 'fit_intercept': True, 'fit_path': True, 'jitter': None, 'n_nonzero_coefs': 500, 'normalize': 'deprecated', 'precompute': 'auto', 'random_state': 123, 'verbose': False}
+2023-04-26 18:05:38,628:INFO:_master_model_container: 19
+2023-04-26 18:05:38,628:INFO:_display_container: 2
+2023-04-26 18:05:38,628:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2023-04-26 18:05:38,629:INFO:compare_models() successfully completed......................................
+2023-04-26 18:59:36,662:INFO:gpu_param set to False
+2023-04-26 18:59:37,662:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 18:59:37,674:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 18:59:38,243:INFO:Soft dependency imported: xgboost: 1.6.2
+2023-04-26 18:59:38,248:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-26 19:04:30,361:INFO:Initializing automl()
+2023-04-26 19:04:30,362:INFO:automl(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, optimize=mean_squared_error, use_holdout=False, turbo=True, return_train_score=False)
+2023-04-26 19:04:50,902:INFO:Initializing automl()
+2023-04-26 19:04:50,902:INFO:automl(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, optimize=Recall, use_holdout=False, turbo=True, return_train_score=False)
+2023-04-26 19:05:05,578:INFO:Initializing automl()
+2023-04-26 19:05:05,578:INFO:automl(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A837972188>, optimize=Recall, use_holdout=False, turbo=True, return_train_score=False)
