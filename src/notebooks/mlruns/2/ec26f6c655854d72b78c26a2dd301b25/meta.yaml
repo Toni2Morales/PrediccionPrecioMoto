@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/PrediccionPrecioMoto/src/notebooks/mlruns/2/ec26f6c655854d72b78c26a2dd301b25/artifacts
+end_time: 1682606386113
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+run_id: ec26f6c655854d72b78c26a2dd301b25
+run_name: Decision Tree Regressor
+run_uuid: ec26f6c655854d72b78c26a2dd301b25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682606386000
+status: 3
+tags: []
+user_id: tonim

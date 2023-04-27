@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/PrediccionPrecioMoto/src/notebooks/mlruns/2/9a31b5825b3649d199aab607ff9892da/artifacts
+end_time: 1682606394327
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+run_id: 9a31b5825b3649d199aab607ff9892da
+run_name: Elastic Net
+run_uuid: 9a31b5825b3649d199aab607ff9892da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682606394218
+status: 3
+tags: []
+user_id: tonim

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/PrediccionPrecioMoto/src/notebooks/mlruns/2/c4df8311e6534879afa516d56f090498/artifacts
+end_time: 1682606383766
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+run_id: c4df8311e6534879afa516d56f090498
+run_name: Gradient Boosting Regressor
+run_uuid: c4df8311e6534879afa516d56f090498
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682606383541
+status: 3
+tags: []
+user_id: tonim

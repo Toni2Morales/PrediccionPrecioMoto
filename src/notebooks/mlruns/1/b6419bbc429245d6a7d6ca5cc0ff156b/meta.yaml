@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/b6419bbc429245d6a7d6ca5cc0ff156b/artifacts
+end_time: 1682600580363
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: b6419bbc429245d6a7d6ca5cc0ff156b
+run_name: Ridge Regression
+run_uuid: b6419bbc429245d6a7d6ca5cc0ff156b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682600579774
+status: 3
+tags: []
+user_id: tonim

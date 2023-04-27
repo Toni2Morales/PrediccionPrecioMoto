@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/PrediccionPrecioMoto/src/notebooks/mlruns/2/a427175ff21c48cf88c907e1343f5d6a/artifacts
+end_time: 1682606395222
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+run_id: a427175ff21c48cf88c907e1343f5d6a
+run_name: AdaBoost Regressor
+run_uuid: a427175ff21c48cf88c907e1343f5d6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682606395117
+status: 3
+tags: []
+user_id: tonim

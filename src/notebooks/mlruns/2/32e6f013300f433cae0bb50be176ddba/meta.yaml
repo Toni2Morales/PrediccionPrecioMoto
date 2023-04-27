@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/PrediccionPrecioMoto/src/notebooks/mlruns/2/32e6f013300f433cae0bb50be176ddba/artifacts
+end_time: 1682606393876
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+run_id: 32e6f013300f433cae0bb50be176ddba
+run_name: Linear Regression
+run_uuid: 32e6f013300f433cae0bb50be176ddba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682606393055
+status: 3
+tags: []
+user_id: tonim

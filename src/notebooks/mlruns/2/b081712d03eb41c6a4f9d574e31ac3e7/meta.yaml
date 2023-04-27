@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/PrediccionPrecioMoto/src/notebooks/mlruns/2/b081712d03eb41c6a4f9d574e31ac3e7/artifacts
+end_time: 1682606391645
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+run_id: b081712d03eb41c6a4f9d574e31ac3e7
+run_name: Lasso Regression
+run_uuid: b081712d03eb41c6a4f9d574e31ac3e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682606391089
+status: 3
+tags: []
+user_id: tonim

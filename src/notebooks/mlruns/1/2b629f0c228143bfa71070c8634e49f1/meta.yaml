@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/2b629f0c228143bfa71070c8634e49f1/artifacts
+end_time: 1682600578214
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 2b629f0c228143bfa71070c8634e49f1
+run_name: Extra Trees Regressor
+run_uuid: 2b629f0c228143bfa71070c8634e49f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682600577780
+status: 3
+tags: []
+user_id: tonim

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/PrediccionPrecioMoto/src/notebooks/mlruns/2/0efb06ea49094e7b877ec2771b598eab/artifacts
+end_time: 1682606389120
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+run_id: 0efb06ea49094e7b877ec2771b598eab
+run_name: Orthogonal Matching Pursuit
+run_uuid: 0efb06ea49094e7b877ec2771b598eab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682606389015
+status: 3
+tags: []
+user_id: tonim

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/PrediccionPrecioMoto/src/notebooks/mlruns/2/d0133bcc5c6c4cea876e6d7e956cf5dd/artifacts
+end_time: 1682606398287
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+run_id: d0133bcc5c6c4cea876e6d7e956cf5dd
+run_name: Dummy Regressor
+run_uuid: d0133bcc5c6c4cea876e6d7e956cf5dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682606398184
+status: 3
+tags: []
+user_id: tonim

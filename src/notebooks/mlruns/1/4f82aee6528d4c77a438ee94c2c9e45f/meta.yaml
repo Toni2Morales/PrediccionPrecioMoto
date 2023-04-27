@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/4f82aee6528d4c77a438ee94c2c9e45f/artifacts
+end_time: 1682600585176
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 4f82aee6528d4c77a438ee94c2c9e45f
+run_name: Orthogonal Matching Pursuit
+run_uuid: 4f82aee6528d4c77a438ee94c2c9e45f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682600584715
+status: 3
+tags: []
+user_id: tonim

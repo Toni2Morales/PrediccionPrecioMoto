@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/4e52625733124088ad73b37be6b9acbf/artifacts
+end_time: 1682605778393
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 4e52625733124088ad73b37be6b9acbf
+run_name: Session Initialized 92ce
+run_uuid: 4e52625733124088ad73b37be6b9acbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682599525856
+status: 3
+tags: []
+user_id: tonim

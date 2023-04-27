@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/5c19495f2a7c4ef9ac5ec1570662199b/artifacts
+end_time: 1682604617624
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 5c19495f2a7c4ef9ac5ec1570662199b
+run_name: Extreme Gradient Boosting
+run_uuid: 5c19495f2a7c4ef9ac5ec1570662199b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682604615847
+status: 3
+tags: []
+user_id: tonim
