@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/43ee216ba14944e1ae24332323be32b4/artifacts
+end_time: 1682589334220
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 43ee216ba14944e1ae24332323be32b4
+run_name: Light Gradient Boosting Machine
+run_uuid: 43ee216ba14944e1ae24332323be32b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682589333876
+status: 3
+tags: []
+user_id: tonim

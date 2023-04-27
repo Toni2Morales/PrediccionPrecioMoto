@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/7d5acd6fcfd44ab0900aa78f6461be79/artifacts
+end_time: 1682589339345
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 7d5acd6fcfd44ab0900aa78f6461be79
+run_name: Dummy Regressor
+run_uuid: 7d5acd6fcfd44ab0900aa78f6461be79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682589339235
+status: 3
+tags: []
+user_id: tonim

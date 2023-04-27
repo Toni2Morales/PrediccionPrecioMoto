@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/54bb0aa8dc954755a85ace751d88b686/artifacts
+end_time: 1682589338714
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 54bb0aa8dc954755a85ace751d88b686
+run_name: Huber Regressor
+run_uuid: 54bb0aa8dc954755a85ace751d88b686
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682589338583
+status: 3
+tags: []
+user_id: tonim

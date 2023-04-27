@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/7e375615278a4574abd049543ca2f7e2/artifacts
+end_time: 1682589339866
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 7e375615278a4574abd049543ca2f7e2
+run_name: Passive Aggressive Regressor
+run_uuid: 7e375615278a4574abd049543ca2f7e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682589339748
+status: 3
+tags: []
+user_id: tonim

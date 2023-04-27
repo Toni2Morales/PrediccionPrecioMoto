@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/96d0073e287748d89fa1d32c815990af/artifacts
+end_time: 1682589332226
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 96d0073e287748d89fa1d32c815990af
+run_name: Bayesian Ridge
+run_uuid: 96d0073e287748d89fa1d32c815990af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682589331488
+status: 3
+tags: []
+user_id: tonim

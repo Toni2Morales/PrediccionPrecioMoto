@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/99501b439e4b4c73a691d3dd30becdac/artifacts
+end_time: 1682589335059
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 99501b439e4b4c73a691d3dd30becdac
+run_name: Linear Regression
+run_uuid: 99501b439e4b4c73a691d3dd30becdac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682589334740
+status: 3
+tags: []
+user_id: tonim

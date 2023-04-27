@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/604fa29102a44a078b315c0e64ee173d/artifacts
+end_time: 1682589335705
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 604fa29102a44a078b315c0e64ee173d
+run_name: Lasso Regression
+run_uuid: 604fa29102a44a078b315c0e64ee173d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682589335365
+status: 3
+tags: []
+user_id: tonim

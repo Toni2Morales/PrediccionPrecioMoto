@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tonim/Desktop/proyectos/MotosUsadas/src/notebooks/mlruns/1/983a0e6c31994924a2afc003c277458a/artifacts
+end_time: 1682589329699
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 983a0e6c31994924a2afc003c277458a
+run_name: Gradient Boosting Regressor
+run_uuid: 983a0e6c31994924a2afc003c277458a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682589328891
+status: 3
+tags: []
+user_id: tonim
