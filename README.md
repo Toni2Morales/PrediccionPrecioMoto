@@ -150,4 +150,16 @@ max  |        4.000000
 2. Dividimos entre train y test.
 3. Creamos el setup de Pycaret con nuestro dataset
 4. Comparamos entre más de 25 modelos con parámetros por defecto para ver a primera vista cuál modelo viene mejor para este caso.
-5. 
+5. Realizamos una optimización de hiperparámetros para el modelo ganador para ver los mejores parámetros que puede tener nuestro modelo.
+6. Evaluamos el modelo
+7. Guardamos el modelo
+
+#### Las métricas de evaluación que nos ha dado el modelo fueron las siguientes.
+
+Métrica| Valor
+----|-----
+MSE|328389106.8447311
+MAE:3719.2063480301254
+R2:0.95908115777426
+
+#### Como vemos, tenemos un MSE bastante alto lo que podemos suponer que es debido a que hay algunos valores que se alejaban bastante de lo típico, aunque siguen siento valores reales. COn el MAE vemos que en general nos podemos desviar casi 4000 arriba o 4000 abajo lo que no es tanto si tenemos en cuenta de que la desviación extandar era de 90000 aproximadamente. Y la métrica R2 score nos da un muy buen resultado.
