@@ -1,7 +1,7 @@
 # **Predicción del precio de las motos usadas**
 
 -----
-### Este proyecto va a consistir en el análisis, exploración de datos y creación de un modelo de machine learning para la predicción del precio de motos usadas dependiendo de parámetros como el número de dueños anteriores, la potencia, la marca, los kilómetros recorridos, etc. Para ello he usado diferentes herramientas y librerías enfocadas al machine learning.
+#### Este proyecto va a consistir en el análisis, exploración de datos y creación de un modelo de machine learning para la predicción del precio de motos usadas dependiendo de parámetros como el número de dueños anteriores, la potencia, la marca, los kilómetros recorridos, etc. Para ello he usado diferentes herramientas y librerías enfocadas al machine learning.
 
 
 
